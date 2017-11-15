@@ -58,10 +58,14 @@ class BrowserStackFactory extends Selenium2Factory
                 ->scalarNode('build')->info('will be set automatically based on the TRAVIS_JOB_NUMBER environment variable if available')->end()
                 ->scalarNode('os')->end()
                 ->scalarNode('os_version')->end()
-                ->scalarNode('device')->end()
+                ->scalarNode('os_version')->end()
+                ->scalarNode('browser_version')->end()
                 ->booleanNode('browserstack-debug')->end()
                 ->booleanNode('browserstack-tunnel')->end()
                 ->booleanNode('emulator')->end()
+                ->scalarNode('realMobile')->end()
+                ->booleanNode('browserstack-ie-enablePopups')->end()
+                ->booleanNode('browserstack-safari-enablePopups')->end()
             ->end()
         ;
 
